@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Assignment-infotech.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img height="65px" src="./assets/Group.png" alt="">
+      <div class="logo-txt">
+        <h2>COMPANY</h2>
+        <p>Bussiness Tagline</p>
+      </div>
+    </div>
+
+
+    <div class="nav-items">
+      <a href="">Home</a>
+      <a href="">About Us</a>
+      <a href="">Our Services</a>
+      <a href="">Pricing</a>
+      <a href="">FAQ</a>
+    </div>
+
+    <div class="getquote-btn">
+      <button>Get A Quote</button>
+    </div>
+
+     <button id="hamburger-btn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+   <div id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <img height="50px" src="./assets/Group.png" alt="Company Logo" />
+        <div class="logo-txt">
+          <h2>COMPANY</h2>
+          <p>Business Tagline</p>
+        </div>
+      </div>
+      <button id="close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li>
+        <a href="#" class="active-link">
+          <span class="material-symbols-outlined">home</span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined">info</span>
+          About Us
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./assets/Mask group (1).png" alt="">
+          Our Services
+        </a>
+      </li>
+      <li>
+        <a href="#">
+           <img src="./assets/Mask group (3).png" alt="">
+
+          Pricing
+        </a>
+      </li>
+      <li>
+        <a href="#">
+         <img src="./assets/Mask group (2).png" alt="">
+          FAQ
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-contact-btn">
+      <button>CONTACT US</button>
+    </div>
+  </div>
+
+  <section class="sec-1">
+    <div class="sec-txt">
+      <div class="head-txt">
+        <h1>Your Resume <br> <span class="red-txt">Deserves A Yes</span> Let's Make It Happen</h1>
+      </div>
+      <div class="head-para">
+        <p>If your Resume Isn't Getting Responses. Its Time For an Upgrade. Get An ATS-Optimized Resume Crafted By HR Experts To Help You Land More Interviews. Our Resumes Are Designed To get your foot in the door and place your name at the top of the shortlist</p>
+      </div>
+      <div class="head-btns">
+        <button id="btn-1">RESUME PACKAGES</button>
+        <button id="btn-2">CONTACT US</button>
+      </div>
+    </div>
+      <div class="group-img">
+        <img src="./assets/Group 12.png" alt="">
+      </div>
+    </div>
+
+  </section>
+  <section class="sec-2">
+    <p class="sec2-para">
+      What You Get
+    </p>
+    <h1 class="sec2-h1">
+      You're Not Just <span style="color: #FA1239;">Another Applicant </span> And Your <br>
+      Resume Shouldn't Look Like One
+    </h1>
+  </section>
+
+  <section class="sec-3">
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/CMS.png" alt="">
+      </div>
+      <div class="card-para1">
+        <p>A Resume Format That Gets You Interview</p>
+      </div>
+      <div class="card-para2">
+        <p>Get a professionally written, keyword-optimized resume that lands in recuriter inboxes</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/CMS (3).png" alt="">
+      </div>
+      <div class="card-para1">
+        <p>A cover Letter Style that stands Out Strong</p>
+      </div>
+      <div class="card-para2">
+       <p> Stand Out with a cover letter that speaks directly to the role ad reflects your strengths</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/CMS (1).png" alt="">
+      </div>
+      <div class="card-para1">
+        <p>A LinkedIn Profile That Works For You</p>
+      </div>
+      <div class="card-para2">
+       <p>Attract the right eyes, start conversations, and show up in recuriter search</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/CMS (2).png" alt="">
+      </div>
+      <div class="card-para1">
+        <p>An Interview Strategy That Builds Confidence</p>
+      </div>
+      <div class="card-para2">
+        <p>Interview Prepration with HR professionals so you speak clearly confidently</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeBtn = document.getElementById('close-btn');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('open');
+    hamburgerBtn.style.display = 'none'
+  });
+  
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    hamburgerBtn.style.display = 'block'
+  });
+</script>
+</body>
+</html>
